@@ -45,7 +45,7 @@ def main(arguments):
                                      formatter_class=argparse.RawDescriptionHelpFormatter)
     parser.add_argument('svg_font_file', help="SVG input file", type=str)
     parser.add_argument('glyphs_font_file', nargs='?', help="Glyphs input file", type=str)
-    parser.add_argument('padding', nargs='?', help="Glyph padding", type=int, default=0)
+    parser.add_argument('--padding', nargs='?', help="Glyph padding", type=int, default=0)
 
     args = parser.parse_args(arguments)
 
