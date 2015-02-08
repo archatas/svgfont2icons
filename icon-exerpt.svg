@@ -1,0 +1,45 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" >
+<svg xmlns="http://www.w3.org/2000/svg">
+<metadata>
+Created by FontPrep 20130207 at Sun Feb  8 02:21:41 2015
+ By Thomas Helbig
+(c) 2015 Thomas Helbig. All rights reserved.
+</metadata>
+<defs>
+<font id="b4114c7439434ff4b0276574dfe27cd0" horiz-adv-x='1024' >
+  <font-face 
+    font-family="IconExerpt-Regular"
+    font-weight="400"
+    font-stretch="normal"
+    units-per-em="1000"
+    panose-1="0 0 5 0 0 0 0 0 0 0"
+    ascent="800"
+    descent="-200"
+    bbox="0 -12 1200 1500"
+    underline-thickness="50"
+    underline-position="-50"
+    unicode-range="U+0020-E21C"
+  />
+<missing-glyph horiz-adv-x="756" 
+d="M620 1500v-1512h-479v1512h479zM504 1399h-250v-50h98v-56h-100v-50h252v50h-100v56h100v50zM404 1204h-152v-158h252v52h-100v106zM352 1152v-54h-50v54h50zM504 1006h-252v-50h100v-56h-100v-50h152v106h100v50zM504 915h-50v-100h-202v-51h252v151zM504 730h-152v-84
+h52v34h50v-71h-152v121h-50v-171h252v171zM504 469h-252v-171h252v171zM454 419v-71h-152v71h152zM504 263h-252v-50h106l-106 -71v-50h252v50h-155l106 71h49v50z" />
+    <glyph glyph-name=".notdef" horiz-adv-x="756" 
+d="M620 1500v-1512h-479v1512h479zM504 1399h-250v-50h98v-56h-100v-50h252v50h-100v56h100v50zM404 1204h-152v-158h252v52h-100v106zM352 1152v-54h-50v54h50zM504 1006h-252v-50h100v-56h-100v-50h152v106h100v50zM504 915h-50v-100h-202v-51h252v151zM504 730h-152v-84
+h52v34h50v-71h-152v121h-50v-171h252v171zM504 469h-252v-171h252v171zM454 419v-71h-152v71h152zM504 263h-252v-50h106l-106 -71v-50h252v50h-155l106 71h49v50z" />
+    <glyph glyph-name=".null" horiz-adv-x="0" 
+ />
+    <glyph glyph-name="nonmarkingreturn" horiz-adv-x="333" 
+ />
+    <glyph glyph-name="space" unicode=" " horiz-adv-x="600" 
+ />
+    <glyph glyph-name="uniE1F8" unicode="&#xe1f8;" 
+d="M1150 1000q38 0 44 -6t6 -44v-250h-1200v250q0 38 6 44t44 6h300v100q0 38 31 69t69 31h300q38 0 69 -31t31 -69v-100h300zM750 1000v100h-300v-100h300zM700 500v100h500v-550q0 -38 -6 -44t-44 -6h-1100q-38 0 -44 6t-6 44v550h500v-100h200z" />
+    <glyph glyph-name="uniE1FA" unicode="&#xe1fa;" 
+d="M425 1200q12 0 20.5 -0.5t16 0t13 -1t10 -1.5t9 -3t6.5 -3.5t7 -5t7 -6t8.5 -8l9.5 -9.5l632 -631q27 -26 27 -36t-26 -36l-425 -423q-27 -27 -35.5 -27t-35.5 27l-631 631q-28 28 -33 41t-5 67v325q0 75 12.5 87.5t87.5 12.5h325zM250 1050q-41 0 -70.5 -29.5
+t-29.5 -70.5t29.5 -70.5t70.5 -29.5t70.5 29.5t29.5 70.5t-29.5 70.5t-70.5 29.5z" />
+    <glyph glyph-name="uniE21C" unicode="&#xe21c;" 
+d="M825 1200q28 0 48.5 -11.5t30 -26t15 -39t6 -38t0.5 -35.5q0 -77 -35 -177t-90 -173h275q71 0 98 -49.5t27 -150.5q0 -135 -30.5 -234t-86 -156t-125.5 -83.5t-158 -26.5q-175 0 -400 75v575q27 54 72.5 101.5t92.5 86.5t95 84.5t92.5 116t72.5 161.5zM0 700h300v-700
+h-300v700z" />
+  </font>
+</defs></svg>
