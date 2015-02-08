@@ -11,8 +11,8 @@ SVG_ICON_TEMPLATE = """<?xml version="1.0" encoding="utf-8"?>
 <!-- Generator: Adobe Illustrator 17.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-   width="1200px" height="1200px" viewBox="0 0 1200 1200" xml:space="preserve">
-<path d="{{ icon_path }}" transform="scale(1,-1) translate(0,-1200)"/>
+   width="1200px" height="1200px" viewBox="0 0 {{ width }} {{ height }}" xml:space="preserve">
+<path d="{{ icon_path }}" transform="scale(1,-1) translate({{ position_x }}, {{ position_y }})" />
 </svg>
 """
 
@@ -45,6 +45,7 @@ def main(arguments):
                                      formatter_class=argparse.RawDescriptionHelpFormatter)
     parser.add_argument('svg_font_file', help="SVG input file", type=str)
     parser.add_argument('glyphs_font_file', nargs='?', help="Glyphs input file", type=str)
+    parser.add_argument('padding', nargs='?', help="Glyph padding", type=int, default=0)
 
     args = parser.parse_args(arguments)
 
@@ -61,6 +62,10 @@ def main(arguments):
     if not os.path.exists('icons'):
         os.makedirs('icons')
 
+    padding = args.padding
+    template = SVG_ICON_TEMPLATE.replace('{{ width }}', str(1200 + 2 * padding)).replace('{{ height }}', str(1200 + 2 * padding))
+    template = template.replace('{{ position_x }}', str(padding)).replace('{{ position_y }}', str(-1200 - padding))
+
     for glyph_node in xml_doc.findall('{http://www.w3.org/2000/svg}defs/{http://www.w3.org/2000/svg}font/{http://www.w3.org/2000/svg}glyph'):
         glyph_name = glyph_node.get('glyph-name').replace('.', '')
         glyph_path = glyph_node.get('d')
@@ -68,7 +73,7 @@ def main(arguments):
             if glyph_name in name_mapper:
                 glyph_name = name_mapper[glyph_name]
             icon_file = open(os.path.join('icons', glyph_name + '.svg'), 'w')
-            icon_content = SVG_ICON_TEMPLATE.replace('{{ icon_path }}', glyph_path)
+            icon_content = template.replace('{{ icon_path }}', glyph_path)
             icon_file.write(icon_content)
             icon_file.close()
 
